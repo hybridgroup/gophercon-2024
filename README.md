@@ -1,8 +1,6 @@
-# Gophercon 2023
+# Gophercon 2024
 
-![](https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1671213785/r7yy81wuzsp4ny0ataty.jpg)
-
-The is the repository for the hardware hack session at Gophercon 2023.
+The is the repository for the hardware hack session at Gophercon 2024.
 
 https://gophercon.com/
 
