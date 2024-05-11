@@ -13,8 +13,9 @@ import (
 	"tinygo.org/x/tinyfont"
 	"tinygo.org/x/tinyfont/freemono"
 
-	"tinygo.org/x/drivers/net/mqtt"
-	"tinygo.org/x/drivers/wifinina"
+	mqtt "github.com/eclipse/paho.mqtt.golang"
+	"tinygo.org/x/drivers/netlink"
+	"tinygo.org/x/drivers/netlink/probe"
 )
 
 var (
@@ -35,32 +36,31 @@ var (
 )
 
 var (
-	// these are the default pins for the Arduino Nano33 IoT.
-	spi = machine.NINA_SPI
-
-	// this is the ESP chip that has the WIFININA firmware flashed on it
-	adaptor *wifinina.Device
-	topic   = "tinygohackday"
+	topic = "tinygohackday"
 
 	mqttClient mqtt.Client
 )
 
-// access point info.
 var (
 	ssid string
 	pass string
+
+	// IP address of the MQTT broker to use. Replace with your own info, if so desired.
+	broker string = "tcp://test.mosquitto.org:1883"
 )
-
-const retriesBeforeFailure = 3
-
-// IP address of the MQTT broker to use. Replace with your own info, if so desired.
-var server = "tcp://test.mosquitto.org:1883"
 
 func main() {
 	initDevices()
 
-	initAdaptor()
-	connectToAP()
+	link, _ := probe.Probe()
+
+	err := link.NetConnect(&netlink.ConnectParams{
+		Ssid:       ssid,
+		Passphrase: pass,
+	})
+	if err != nil {
+		failMessage(err.Error())
+	}
 
 	connectToMQTT()
 
@@ -155,49 +155,17 @@ func handleDisplay() {
 	}
 }
 
-func initAdaptor() {
-	// Configure SPI for 8Mhz, Mode 0, MSB First
-	spi.Configure(machine.SPIConfig{
-		Frequency: 8 * 1e6,
-		SDO:       machine.NINA_SDO,
-		SDI:       machine.NINA_SDI,
-		SCK:       machine.NINA_SCK,
-	})
-
-	// Init esp32
-	adaptor = wifinina.New(spi,
-		machine.NINA_CS,
-		machine.NINA_ACK,
-		machine.NINA_GPIO0,
-		machine.NINA_RESETN)
-	adaptor.Configure()
-}
-
-// connect to access point
-func connectToAP() {
-	time.Sleep(2 * time.Second)
-	var err error
-	for i := 0; i < retriesBeforeFailure; i++ {
-		println("Connecting to " + ssid)
-		err = adaptor.ConnectToAccessPoint(ssid, pass, 10*time.Second)
-		if err == nil {
-			println("Connected.")
-
-			return
-		}
-	}
-
-	// error connecting to AP
-	failMessage(err.Error())
-}
-
 func connectToMQTT() {
-	opts := mqtt.NewClientOptions()
-	opts.AddBroker(server).SetClientID("tinygo-client-" + randomString(10))
+	clientId := "tinygo-client-" + randomString(10)
 
-	println("Connectng to MQTT...")
-	mqttClient = mqtt.NewClient(opts)
-	if token := mqttClient.Connect(); token.Wait() && token.Error() != nil {
+	options := mqtt.NewClientOptions()
+	options.AddBroker(broker)
+	options.SetClientID(clientId)
+
+	println("Connecting to MQTT broker at", broker)
+	mqttClient = mqtt.NewClient(options)
+	token := mqttClient.Connect()
+	if token.Wait() && token.Error() != nil {
 		failMessage(token.Error().Error())
 	}
 }

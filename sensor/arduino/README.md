@@ -4,7 +4,7 @@
 
     - Arduino Nano RP2040 Connect IoT board
     - Grove IoT Starter Kit parts
-    - Personal computer with Go 1.19+ and TinyGo installed, and a serial port.
+    - Personal computer with Go 1.22+ and TinyGo installed, and a serial port.
 
 ### TinyGo drivers
 
