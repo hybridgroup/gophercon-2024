@@ -4,7 +4,7 @@ The is the repository for the hardware hack session at Gophercon 2024.
 
 https://gophercon.com/
 
-### If you received a GoBadge, it is yours to keep. Please return all other equipment when you are finished for the next person. Thank you!
+### If you received a GopherBadger2040, it is yours to keep. Please return all other equipment when you are finished for the next person. Thank you!
 
 ## Installation
 
@@ -12,13 +12,43 @@ Please read our [installation instructions here](./INSTALL.md).
 
 ## Activities
 
-### GoBadge Hacking
+### GopherBadger2040 Hacking
 
-![GoBadge](./images/gobadges.jpg)
+![GopherBadger2040](./images/badger2040.jpg)
 
-If you are one of the very fortunate individuals to have received a GoBadge, it is in fact yours to keep!
+If you are one of the very fortunate individuals to have received a GopherBadger2040, it is in fact yours to keep!
 
-Go to https://github.com/tinygo-org/gobadge for more info.
+Go to https://github.com/tinygo-org/gopherbadger2040 for more info.
+
+### Parrot Minidrones
+
+![Parrot Minidrone](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rolling_Spider.jpg/320px-Rolling_Spider.jpg)
+
+We have Parrot Minidrones you can fly with Go code to control them using their built-in Bluetooth API.
+
+Post in-flight videos using hashtag #gopherconeu
+
+Ready for takeoff? Go to [./drone/minidrone/](./drone/minidrone/).
+
+### WowWee MiP robots
+
+![WowWee MiP](./images/mip.png)
+
+Along for the ride, we brought a couple of WowWee MiP two-wheeled self-balancing robots that you control using Bluetooth.
+
+Post robot videos using hashtag #gopherconeu
+
+Ready to roll? Go to [./robot/mip](./robot/mip/).
+
+### WowWee CHiP robot dog
+
+![WowWee CHiP](./images/chip.png)
+
+We also brought our WowWee CHiP the robot dog that you control using Bluetooth.
+
+Post robot videos using hashtag #gopherconeu
+
+Ready to ddo some new tricks? Go to [./robot/chip](./robot/chip/).
 
 ### TinyGo IoT sensors
 
@@ -33,28 +63,6 @@ These can be programmed using TinyGo.
 There are some Grove sensor kits that you can use for the activity.
 
 Ready to try this out? Go to [./sensor/arduino/](./sensor/arduino/) to get started.
-
-### Gopherdrones
-
-#### DJI Tello
-
-![Tello](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Ryze_Tello.jpg/320px-Ryze_Tello.jpg)
-
-We have brought some DJI Tello drones for your Go-powered flying activities.
-
-In additional to the drones to be to be coded/flown, we also have Dualshock3-clone controllers for flight control. Post your awesome videos using hashtag #gophercon
-
-Want to get airborne? Go to [./drone/tello/](./drone/tello/).
-
-#### Parrot Minidrones
-
-![Parrot Minidrone](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rolling_Spider.jpg/320px-Rolling_Spider.jpg)
-
-We have Parrot Minidrones you can fly with Go code to control them using their built-in Bluetooth API.
-
-Post in-flight videos using hashtag #gophercon
-
-Ready for takeoff? Go to [./drone/minidrone/](./drone/minidrone/).
 
 ### TinyGo Music Jam
 

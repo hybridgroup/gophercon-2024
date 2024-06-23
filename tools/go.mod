@@ -3,20 +3,22 @@ module github.com/hybridgroup/goperhcon-2023/tools
 go 1.20
 
 require (
-	tinygo.org/x/bluetooth v0.7.0
-	tinygo.org/x/drivers v0.25.0
+	tinygo.org/x/bluetooth v0.10.0
+	tinygo.org/x/drivers v0.26.1-0.20230922160320-ed51435c2ef6
 )
 
 require (
-	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
-	github.com/godbus/dbus/v5 v5.0.3 // indirect
+	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
-	github.com/muka/go-bluetooth v0.0.0-20220830075246-0746e3a1ea53 // indirect
-	github.com/saltosystems/winrt-go v0.0.0-20230510070731-e096b9afa761 // indirect
-	github.com/sirupsen/logrus v1.9.0 // indirect
+	github.com/saltosystems/winrt-go v0.0.0-20240509164145-4f7860a3bd2b // indirect
+	github.com/sirupsen/logrus v1.9.3 // indirect
+	github.com/soypat/cyw43439 v0.0.0-20240609122733-da9153086796 // indirect
+	github.com/soypat/seqs v0.0.0-20240527012110-1201bab640ef // indirect
 	github.com/tinygo-org/cbgo v0.0.4 // indirect
-	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f // indirect
-	golang.org/x/sys v0.0.0-20220829200755-d48e67d00261 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	github.com/tinygo-org/pio v0.0.0-20231216154340-cd888eb58899 // indirect
+	golang.org/x/exp v0.0.0-20230728194245-b0cb94b80691 // indirect
+	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
+	golang.org/x/text v0.7.0 // indirect
 )
