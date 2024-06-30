@@ -60,6 +60,16 @@ Post robot videos using hashtag #gophercon
 
 Ready to ddo some new tricks? Go to [./robot/chip](./robot/chip/).
 
+### Sphero Ollie robots
+
+![Sphero Ollie](./images/ollie.jpg)
+
+Turns out we had a few unopened Sphero Ollie robots that we found just in time for Gophercon! These fast Bluetooth controlled robotic toys have long been a Go programmer fan favorite.
+
+There are a few of these cylindrical robots to help satisfy your need for speed.
+
+Want to take one for a spin? Go to [./robot/sphero/](./robot/sphero/).
+
 ### TinyGo Open LED Race
 
 ![TinyGo OpenLEDRace](./images/ledrace-input2.gif)
@@ -93,16 +103,6 @@ Thanks to the USB-MIDI support, you can turn your board into a tiny digital musi
 Add buttons, sliders, a joystick, and when we say become part of the music we mean it!
 
 Let's make beautiful music together, just go to [./musicjam/](./musicjam/).
-
-### Sphero Ollie robots
-
-![Sphero Ollie](./images/ollie.jpg)
-
-Turns out we had a few unopened Sphero Ollie robots that we found just in time for Gophercon! These fast Bluetooth controlled robotic toys have long been a Go programmer fan favorite.
-
-There are a few of these cylindrical robots to help satisfy your need for speed.
-
-Want to take one for a spin? Go to [./robot/sphero/](./robot/sphero/).
 
 ## Bounties
 
