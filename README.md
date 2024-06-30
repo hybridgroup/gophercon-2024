@@ -52,9 +52,11 @@ Ready to roll? Go to [./robot/mip](./robot/mip/).
 
 ### WowWee CHiP robot dog
 
-![WowWee CHiP](./images/chip.png)
+![WowWee CHiP](./images/chip.jpg)
 
 We also brought our WowWee CHiP the robot dog that you control using Bluetooth.
+
+This is a challenge activity: help us complete the implementation for the complete API.
 
 Post robot videos using hashtag #gophercon
 
