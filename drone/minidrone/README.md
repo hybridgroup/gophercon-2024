@@ -1,6 +1,6 @@
 # Parrot Minidrone
 
-![Parrot Minidrone](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rolling_Spider.jpg/320px-Rolling_Spider.jpg)
+![Parrot Minidrone](../../images/minidrone.jpg)
 
 The Minidrone from Parrot uses a Bluetooth interface and programming API.
 
@@ -12,7 +12,7 @@ You can use [TinyGo Bluetooth](https://tinygo.org/bluetooth) to control the dron
     - Personal computer with Go 1.20+ installed
     - Works on Linux, macOS, or Windows
 
-Do you have a Gopher Badge or GoBadge? You can also use it to control your drone using the Flightbadge firmware! Look in the tutorials directory in the repo for your specific badge.
+Do you have a Badger20400-W? You can also use it to control your drone using the Flightbadge firmware! Look in the tutorials directory in the repo for your specific badge.
 
 ## Installation
 
@@ -36,9 +36,13 @@ The name of the drone should be listed on the side of it.
 
 To find out the unique MAC address or Bluetooth ID for a device, you can use the Bluetooth scanner located in the tools directory of this repo.
 
-First, change so the current directory is the `tools` directory.
+First, change so the current directory is the `tools` directory:
 
-Then, run the following command:
+```shell
+cd tools
+```
+
+Then, run the Bluetooth scanner command:
 
 ```shell
 go run ./blescanner

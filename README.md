@@ -12,23 +12,33 @@ Please read our [installation instructions here](./INSTALL.md).
 
 ## Activities
 
-### GopherBadger2040 Hacking
+### Badger2040-W Hacking
 
-![GopherBadger2040](./images/badger2040.jpg)
+![Badger2040-W](./images/badger2040-w.webp)
 
-If you are one of the very fortunate individuals to have received a GopherBadger2040, it is in fact yours to keep!
+If you are one of the very fortunate individuals to have received a Badger2040 badge tha tis programmable using TinyGo, it is in fact yours to keep!
 
-Go to https://github.com/tinygo-org/gopherbadger2040 for more info.
+Go to https://github.com/conejoninja/badger2040 for more info.
 
 ### Parrot Minidrones
 
-![Parrot Minidrone](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rolling_Spider.jpg/320px-Rolling_Spider.jpg)
+![Parrot Minidrone](./images/minidrone.jpg)
 
 We have Parrot Minidrones you can fly with Go code to control them using their built-in Bluetooth API.
 
-Post in-flight videos using hashtag #gopherconeu
+Post in-flight videos using hashtag #gophercon
 
 Ready for takeoff? Go to [./drone/minidrone/](./drone/minidrone/).
+
+### Powerup Miniblimps
+
+![Powerup](images/powerup-balloon.jpg)
+
+We have miniature blimps using modified Powerup programmable paper airplanes that you can fly with Go code to control them using their built-in Bluetooth API.
+
+Post in-flight videos using hashtag #gophercon
+
+Ready for takeoff? Go to [./drone/powerup/](./drone/powerup/).
 
 ### WowWee MiP robots
 
@@ -36,7 +46,7 @@ Ready for takeoff? Go to [./drone/minidrone/](./drone/minidrone/).
 
 Along for the ride, we brought a couple of WowWee MiP two-wheeled self-balancing robots that you control using Bluetooth.
 
-Post robot videos using hashtag #gopherconeu
+Post robot videos using hashtag #gophercon
 
 Ready to roll? Go to [./robot/mip](./robot/mip/).
 
@@ -46,9 +56,17 @@ Ready to roll? Go to [./robot/mip](./robot/mip/).
 
 We also brought our WowWee CHiP the robot dog that you control using Bluetooth.
 
-Post robot videos using hashtag #gopherconeu
+Post robot videos using hashtag #gophercon
 
 Ready to ddo some new tricks? Go to [./robot/chip](./robot/chip/).
+
+### TinyGo Open LED Race
+
+![TinyGo OpenLEDRace](./images/ledrace-input2.gif)
+
+Minimalist race game with an LED strip.
+
+For more information, please go to https://github.com/conejoninja/ledrace
 
 ### TinyGo IoT sensors
 
