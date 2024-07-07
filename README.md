@@ -62,6 +62,8 @@ Post robot videos using hashtag #gophercon
 
 Ready to ddo some new tricks? Go to https://github.com/hybridgroup/tinygo-chip.
 
+> :info: take a look at the [./tools](./tools) directory for instructions on how to do bluetooth discovery
+
 ### Sphero Ollie robots
 
 ![Sphero Ollie](./images/ollie.jpg)
