@@ -48,7 +48,7 @@ Along for the ride, we brought a couple of WowWee MiP two-wheeled self-balancing
 
 Post robot videos using hashtag #gophercon
 
-Ready to roll? Go to [./robot/mip](./robot/mip/).
+Ready to roll? Go to [tinygo-mip](https://github.com/hybridgroup/tinygo-mip/).
 
 ### WowWee CHiP robot dog
 
@@ -60,7 +60,7 @@ This is a challenge activity: help us complete the implementation for the comple
 
 Post robot videos using hashtag #gophercon
 
-Ready to ddo some new tricks? Go to [./robot/chip](./robot/chip/).
+Ready to ddo some new tricks? Go to [tinygo-chip](https://github.com/hybridgroup/tinygo-chip/).
 
 ### Sphero Ollie robots
 
