@@ -18,7 +18,7 @@ Please read our [installation instructions here](./INSTALL.md).
 
 If you are one of the very fortunate individuals to have received a Badger2040 badge tha tis programmable using TinyGo, it is in fact yours to keep!
 
-Go to https://github.com/conejoninja/badger2040 for more info.
+Go to https://github.com/hybridgroup/badger2040 for more info.
 
 ### Parrot Minidrones
 
