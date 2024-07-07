@@ -72,10 +72,10 @@ All of the musical activities can be done with either the GoBadge or with the Ar
 
 If you have a GoBadge you can use it as your MIDI controller. Check with us for some accessories you will need.
 
-To follow the MIDI activities using the GoBadge, [click here](./gobadge.md)
+To follow the MIDI activities using the GoBadge, [click here](./gobadge/README.md)
 
 ### Arduino RP2040 Nano
 
 You can also use a Arduino RP2040 board along with one of the button kits that we have brought with us.
 
-To follow the MIDI activities using the Arduino RP2040 Nano, [click here](./arduino.md)
+To follow the MIDI activities using the Arduino RP2040 Nano, [click here](./arduino/README.md)
