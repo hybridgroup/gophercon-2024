@@ -78,10 +78,10 @@ func handleLeftJoystick() {
 		leftStick := getLeftStick()
 
 		switch {
-		case leftStick.x > 20:
+		case leftStick.x > 40:
 			pitch := ValidatePitch(leftStick.x, offset)
 			airplane.Rudder(pitch)
-		case leftStick.x < -20:
+		case leftStick.x < -40:
 			pitch := ValidatePitch(leftStick.x, offset) * -1
 			airplane.Rudder(pitch)
 		default:
