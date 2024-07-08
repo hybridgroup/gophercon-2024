@@ -112,6 +112,13 @@ Let's make beautiful music together, just go to [./musicjam/](./musicjam/).
 
 We have some additional bounties and prizes, [you can see more information here](./BOUNTIES.md).
 
+## Lego Technic
+
+We would like to add ble support for lego.
+
+Reference:
+https://lego.github.io/lego-ble-wireless-protocol-docs/
+
 ## License
 
 Copyright (c) 2015-2023 The Hybrid Group and friends. Licensed under the MIT license.
